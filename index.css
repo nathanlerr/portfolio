@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the container takes up the full viewport */
+body {
+    width: 100%;
+    height: 100vh; /* Use vh to ensure it fills the visible screen */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    background-color: #808080; /* Grey background */
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    display: block; /* Removes any bottom whitespace */
+}
+border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid red; /* Example border */
+    pointer-events: none; /* Allows clicks to pass through the border */
+}
